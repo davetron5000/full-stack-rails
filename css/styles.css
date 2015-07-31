@@ -1,0 +1,53 @@
+.book-purple {
+  color: rgb(32,39,83);
+}
+
+.bg-book-purple {
+  background-color: rgb(32,39,83);
+}
+.btn.bg-book-purple:hover {
+  background-color: rgb(52,59,103);
+}
+
+.tan {
+  color: #bca773;
+}
+
+.bg-tan {
+  background-color: #bca773;
+}
+
+.white-purple {
+  color: #feeeff;
+}
+.bg-white-purple {
+  background-color: #feeeff;
+}
+.ls2 {
+  letter-spacing: 0.05em;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "stevie-sans";
+}
+small, .small {
+  font-weight: 200;
+}
+p, li, a, td {
+  font-family: "calluna";
+  font-size: 18px;
+}
+.top {
+  padding-left: 16em;
+  padding-right: 16em;
+}
+.top-section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.border-hover:hover {
+  border: solid thin;
+}
+.thin {
+  font-weight: 200;
+}
