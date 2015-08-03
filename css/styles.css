@@ -2,6 +2,8 @@
   color: rgb(32,39,83);
 }
 
+
+
 .bg-book-purple {
   background-color: rgb(32,39,83);
 }
@@ -28,26 +30,46 @@
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "stevie-sans";
+  font-family: "stevie-sans", "Helvetica Neue", "Helvetica", sans-serif;
 }
 small, .small {
   font-weight: 200;
 }
 p, li, a, td {
-  font-family: "calluna";
+  font-family: "calluna", "Garamond", serif;
   font-size: 18px;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
 .top {
+  padding-top: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+}
+@media (min-width: 40em) {
+  .top {
+  padding-left: 8em;
+  padding-right: 8em;
+  }
+}
+@media (min-width: 52em) {
+  .top {
   padding-left: 16em;
   padding-right: 16em;
-}
-.top-section {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  }
 }
 .border-hover:hover {
   border: solid thin;
 }
 .thin {
   font-weight: 200;
+}
+.list-tight {
+  line-height: 1.2;
+}
+.list-tight li {
+  padding-top: 0.3em;
 }

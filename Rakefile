@@ -24,6 +24,10 @@ file CONSOLIDATED_CSS => CSS_SRC do |task|
   end
 end
 
+file "dev.html" => [HTML_SOURCE, CONSOLIDATED_CSS] do |task|
+  mk_html(src: HTML_SOURCE, dest: "dev.html", css: CONSOLIDATED_CSS, typekit: true)
+end
+
 file MINIFIED_CLEAN_CSS => UN_CSS do |task|
   sh! "minify --output #{MINIFIED_CLEAN_CSS} #{UN_CSS}"
 end
@@ -59,6 +63,7 @@ file "index.html" => [MINIFIED_CLEAN_CSS, HTML_SOURCE ] do |task|
 end
 
 task :default => "index.html"
+task :dev => "dev.html"
 
 def sh!(command)
   sh command do |ok, res|
