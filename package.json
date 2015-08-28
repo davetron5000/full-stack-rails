@@ -1,0 +1,12 @@
+{
+  "name": "full-stack-rails.com",
+  "description": "Web site for Rails, Angular, Bootstrap, and Postgres",
+  "repository": "https://github.com/davetron5000/full-stack-rails",
+  "license": "MIT",
+  "dependencies": {
+    "minify": "latest",
+    "uncss": "latest",
+    "html-minifier": "latest",
+    "basscss": "latest"
+  }
+}

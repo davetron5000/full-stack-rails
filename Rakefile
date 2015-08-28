@@ -1,7 +1,7 @@
 require 'rake/clean'
 
 include FileUtils
-
+ENV["PATH"] = "#{ENV['PATH']}:node_modules/.bin"
 BUILD_DIR = "build"
 
 CLEAN.include(BUILD_DIR)
@@ -29,7 +29,7 @@ file "dev.html" => [HTML_SOURCE, CONSOLIDATED_CSS] do |task|
 end
 
 file MINIFIED_CLEAN_CSS => UN_CSS do |task|
-  sh! "minify --output #{MINIFIED_CLEAN_CSS} #{UN_CSS}"
+  sh! "minify #{UN_CSS} > #{MINIFIED_CLEAN_CSS}"
 end
 
 file UN_CSS => [ CONSOLIDATED_CSS, HTML_SOURCE ] do |task|
@@ -53,7 +53,6 @@ file "index.html" => [MINIFIED_CLEAN_CSS, HTML_SOURCE ] do |task|
     "remove-script-type-attributes",
     "remove-optional-tags",
     "remove-ignored",
-    "remove-empty-elements",
   ].map { |_|
     "--#{_}"
   }
