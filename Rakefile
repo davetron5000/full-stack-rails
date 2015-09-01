@@ -61,7 +61,10 @@ file "index.html" => [MINIFIED_CLEAN_CSS, HTML_SOURCE ] do |task|
   sh! "html-minifier #{html_minifier_options.join(' ')} -o #{task.name} #{unminified_html}"
 end
 
+desc "Build the production index.html"
 task :default => "index.html"
+
+desc "Build dev.html, which is more suitable for debugging and modifying content"
 task :dev => "dev.html"
 
 def sh!(command)
