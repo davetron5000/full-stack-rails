@@ -25,7 +25,7 @@ file CONSOLIDATED_CSS => CSS_SRC do |task|
 end
 
 file "dev.html" => [HTML_SOURCE, CONSOLIDATED_CSS] do |task|
-  mk_html(src: HTML_SOURCE, dest: "dev.html", css: CONSOLIDATED_CSS, typekit: true)
+  mk_html(src: HTML_SOURCE, dest: "dev.html", css: CONSOLIDATED_CSS, typekit: false)
 end
 
 file MINIFIED_CLEAN_CSS => UN_CSS do |task|
@@ -57,7 +57,7 @@ file "index.html" => [MINIFIED_CLEAN_CSS, HTML_SOURCE ] do |task|
     "--#{_}"
   }
   unminified_html = "build/index_#{$$}.html"
-  mk_html(src: HTML_SOURCE, dest: unminified_html, css: :inline, typekit: true)
+  mk_html(src: HTML_SOURCE, dest: unminified_html, css: :inline, typekit: false)
   sh! "html-minifier #{html_minifier_options.join(' ')} -o #{task.name} #{unminified_html}"
 end
 
@@ -74,6 +74,7 @@ def sh!(command)
 end
 
 def mk_html(src: , dest: , typekit: false, css: :inline)
+  puts "Creating #{dest} from #{src}"
   File.open(dest,"w") do |file|
     File.open(src) do |html|
       html.readlines.each do |line|

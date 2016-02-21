@@ -18,8 +18,11 @@
           <h2 class="mt0 thin">Powerful, Effective, and Efficient Full-Stack Web Development</h2>
           <hr>
           <h3 class="h4">A Book by David Bryant Copeland</h3>
-          <div class="">
+          <div>
             <a class="btn btn-primary bg-book-purple h2 mt2 p2" href="https://pragprog.com/book/dcbang/rails-angular-postgres-and-bootstrap">Buy Now $24.00</a>
+          </div>
+          <div>
+            <a class="btn border rounded bg-book-purple muted white thin h3 mt1 p1" href="https://www.amazon.com/review/create-review?ie=UTF8&asin=1680501267">Write a Review…</a>
           </div>
         </div>
       </div>
@@ -42,17 +45,17 @@
     </section>
     <section class="top bg-book-purple white">
       <div class="clearfix">
-        <div class="col col-3 right-align px2">
-          <ul class="m0 list-reset">
+        <div class="col col-4 right-align px2">
+          <ul class="mt0 list-reset">
             <li class="h2 mt0 mb0 bold">You…</li>
           </ul>
         </div>
-        <div class="col col-9">
-          <ul class="m0 list-reset list-tight">
+        <div class="col col-8">
+          <ul class="mt0 list-reset list-tight">
             <li class="h2 mt0 mb0 thin">know a bit of Rails.</li>
             <li class="h2 mt0 mb0 thin">care about user experience.</li>
             <li class="h2 mt0 mb0 thin">care about performance.</li>
-            <li class="h2 mt0 mb0 thin">want your code simple, maintainable, and testable.</li>
+            <li class="h2 mt0 mb0 thin">want your code simple, testable, and maintainable.</li>
           </ul>
         </div>
       </div>
@@ -73,7 +76,8 @@
       <section>
         <div class="clearfix">
           <div class="col col-12 lg-col-6">
-            <img width="391" height="53" src="stack-view.png" alt="View: AngularJS and Bootstrap">
+            <img width="391" height="53" src="stack-view.png" alt="View: AngularJS and Bootstrap" class="lg-show">
+            <img width="329" height="44" src="stack-view.png" alt="View: AngularJS and Bootstrap" class="lg-hide">
           </div>
           <div class="col col-12 lg-col-6">
             <ul class="list-tight">
@@ -88,7 +92,8 @@
       <section>
         <div class="clearfix">
           <div class="col col-12 lg-col-6">
-            <img width="391" height="53" src="stack-middleware.png" alt="Middleware: Ruby on Rails">
+            <img width="391" height="53" src="stack-middleware.png" alt="Middleware: Ruby on Rails" class="lg-show">
+            <img width="329" height="44" src="stack-middleware.png" alt="Middleware: Ruby on Rails" class="lg-hide">
           </div>
           <div class="col col-12 lg-col-6">
             <ul class="list-tight">
@@ -103,7 +108,8 @@
       <section>
         <div class="clearfix">
           <div class="col col-12 lg-col-6">
-            <img width="391" height="53" src="stack-datastore.png" alt="Datastore: PostgreSQL">
+            <img width="391" height="53" src="stack-datastore.png" alt="Datastore: PostgreSQL" class="lg-show">
+            <img width="329" height="44" src="stack-datastore.png" alt="Datastore: PostgreSQL" class="lg-hide">
           </div>
           <div class="col col-12 lg-col-6">
             <ul class="list-tight">
@@ -119,9 +125,22 @@
     <section class="top bg-book-purple white">
       <a name="why"></a>
       <h1 class="h2">Why Angular, Postgres, and Bootstrap?</h1>
-      <p>
-        While these aren't the only tools of their type, they are top-notch and widely used.  This book will help you get the most out of them.
-      </p>
+      <div class="clearfix">
+        <div class="col col-12 lg-col-6">
+          <p class="p1">
+            While these aren't the only tools of their type, they are top-notch and widely used.  This book will help you get the most out of them.
+          </p>
+        </div>
+        <div class="col col-12 lg-col-6">
+          <iframe class="lg-show" width="400" height="225" src="//www.youtube.com/embed/QbUZnb0rPdY" frameborder="0" allowfullscreen=""></iframe>
+          <div class="lg-hide center">
+            <iframe width="280" height="157" src="//www.youtube.com/embed/QbUZnb0rPdY" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+          <p class="small thin">
+            Talk: “The Power Stack” from Full Stack Toronto
+          </p>
+        </div>
+      </div>
       <section>
         <h1 class="h3">AngularJS</h1>
         <div class="clearfix">
@@ -168,7 +187,7 @@
             </p>
           </div>
           <div class="col col-12 lg-col-6">
-            <ul class="m0 list-tight">
+            <ul class="mt0 list-tight">
               <li>Grid-based design</li>
               <li>Attractive and usable forms and buttons</li>
               <li>Panels, flashes, progressbars, and many other components</li>
@@ -213,6 +232,21 @@
           <h4>11 Practices of an Effective Technical Leader</h4>
         </div>
       </div>
+    </section>
+    <section class="top bg-book-purple white">
+      <h2>About Me</h2>
+      <p>
+        <img height="134" width="150" src="dave.jpg" class="left p1">
+        I'm a programmer, musician, and author.  I speak frequently at national and regional conferences and spend my days currently as a Director of Engineering at Stitch Fix. I've written applications in C, Java, Ruby, Scala, and many others, on large and small teams. As a developer, I believe in clean code, making it right, providing a great user experience and using the right tool for the job. As a bass player, I believe in using a pick, locking it down, and ripping off Peter Hook. As an author, I insist on the Oxford Comma, try to avoid semi-colons, and have removed “very” and “thing” from my dictionary.
+      </p>
+      <h2 class="h3">Other Writing</h2>
+      <ul>
+        <li><a class="white" href="http://naildrivin5.com">My Blog</a></li>
+        <li><a class="white" href="http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html">Rails Validations vs. Postgres Check Constraints</a></li>
+        <li><a class="white" href="http://multithreaded.stitchfix.com/blog/2015/06/02/anatomy-of-service-objects-in-rails">Anatomy of a Rails Service Object</a></li>
+        <li><a class="white" href="http://naildrivin5.com/blog/2014/05/27/rails-does-not-define-your-application-architecture.html">Rails Does not Define Your Application Architecture</a></li>
+        <li><a class="white" href="http://growingdevs.com/stop-using-rubygems-and-start-using-bower.html">Stop Using RubyGems and Start Using Bower for Front-end Asset Management</a></li>
+      </ul>
     </section>
   </body>
 </html>
