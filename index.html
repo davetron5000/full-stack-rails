@@ -1,6 +1,252 @@
-<!DOCTYPE html> <html> <head> <meta charset=utf-8> <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"> <title> Rails, Angular, Postgres, and Bootstrap: Powerful, Effective, and Efficient Full-Stack Web Development. A book by David Bryant Copeland </title> <style>.bold,.btn,h1,h2,h3,h4{font-weight:700}.col,.left{float:left}.btn-primary:disabled,.muted{opacity:.5}img{max-width:100%}body{font-family:'Helvetica Neue',Helvetica,sans-serif;line-height:1.5;font-size:100%;color:#111;background-color:#fff}.btn,code{background-color:transparent}h1,h2,h3,h4{line-height:1.25;margin-top:1em;margin-bottom:.5em}.mt0,p,ul{margin-top:0}p,ul{margin-bottom:1rem}.btn,.m0{margin:0}code{font-family:'Source Code Pro',Consolas,monospace;font-size:inherit;border-radius:3px}h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.25rem}h4{font-size:1rem}a{color:#0074d9;text-decoration:none}a:hover{text-decoration:underline}.btn,.btn:hover{text-decoration:none}hr{border:0;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.btn{font-family:inherit;font-size:inherit;cursor:pointer;display:inline-block;line-height:1.125rem;padding:.5rem 1rem;height:auto;border:1px solid transparent;vertical-align:middle;-webkit-appearance:none;color:inherit}.btn:focus{outline:0;border-color:rgba(0,0,0,.125);box-shadow:0 0 0 3px rgba(0,0,0,.25)}::-moz-focus-inner{border:0;padding:0}.btn-primary,.rounded{border-radius:3px}.btn-primary{color:#fff;background-color:#0074d9}.btn-primary:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-primary:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.small,.thin,small{font-weight:200}.center{text-align:center}.right-align{text-align:right}.nowrap{white-space:nowrap}.list-reset{list-style:none;padding-left:0}.overflow-hidden{overflow:hidden}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.mb0{margin-bottom:0}.mt1{margin-top:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.p0{padding:0}.p1{padding:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.px2{padding-left:1rem;padding-right:1rem}.py3{padding-top:2rem;padding-bottom:2rem}.lg-show{display:none!important}.col{box-sizing:border-box}.col-4{width:33.33333%}.col-8{width:66.66667%}.col-12{width:100%}@media (min-width:64em){.lg-show{display:block!important}.lg-hide{display:none!important}.lg-col{float:left;box-sizing:border-box}.lg-col-6{width:50%}}.flex-auto{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.border{border-style:solid;border-width:1px;border-color:rgba(0,0,0,.125)}.black{color:#111}.white{color:#fff}.bg-white{background-color:#fff}.bg-book-purple{background-color:#202753}.btn.bg-book-purple:hover{background-color:#343b67}.bg-tan{background-color:#bca773}.bg-white-purple{background-color:#feeeff}.ls2{letter-spacing:.05em}.h2,.h3,.h4,h1,h2,h3,h4{font-family:"Helvetica Neue",Helvetica,sans-serif}a,li,p{font-family:Garamond,serif;font-size:18px}body{padding:0;margin:0}.top{padding:.5em 1em}@media (min-width:40em){.top{padding-left:8em;padding-right:8em}}@media (min-width:52em){.md-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.top{padding-left:16em;padding-right:16em}}.border-hover:hover{border:thin solid}.list-tight{line-height:1.2}.list-tight li{padding-top:.3em}</style> <body> <header class="mx4 top bg-white"> <div class=clearfix> <div class="lg-show lg-col py3"> <img width=190 height=228 class=border src=cover.jpg> </div> <div class="overflow-hidden px2"> <h1 class=mb0>Rails, Angular, Postgres, and Bootstrap</h1> <h2 class="mt0 thin">Powerful, Effective, and Efficient Full-Stack Web Development</h2> <hr> <h3 class=h4>A Book by David Bryant Copeland</h3> <div> <a class="btn btn-primary bg-book-purple h2 mt2 p2" href=https://pragprog.com/book/dcbang/rails-angular-postgres-and-bootstrap>Buy Now $24.00</a> </div> <div> <a class="btn border rounded bg-book-purple muted white thin h3 mt1 p1" href="https://www.amazon.com/review/create-review?ie=UTF8&asin=1680501267">Write a Review…</a> </div> </div> </div> </header> <header class="bg-book-purple muted white"> <nav class="p0 mt2"> <ul class="list-reset md-flex lg-center nowrap p1"> <li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=#full-stack>Full Stack</a></li> <li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=#learn>What You'll Learn</a></li> <li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=#why>Why Angular, Postgres, and Bootstrap?</a></li> <li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=https://forums.pragprog.com/forums/389>Discuss Online</a></li> </ul> </nav> </header> <a name=full-stack></a> <section class="top bg-white black"> <h1 class="mb0 h2">Web Development Requires Knowing the Full Stack</h1> <img width=658 height=330 src=stack-hype-generic.png class="mt0 lg-show">
-<img width=329 height=165 src=stack-hype-generic.png class="mt0 lg-hide"> </section> <section class="top bg-book-purple white"> <div class=clearfix> <div class="col col-4 right-align px2"> <ul class="mt0 list-reset"> <li class="h2 mt0 mb0 bold">You…</li> </ul> </div> <div class="col col-8"> <ul class="mt0 list-reset list-tight"> <li class="h2 mt0 mb0 thin">know a bit of Rails.</li> <li class="h2 mt0 mb0 thin">care about user experience.</li> <li class="h2 mt0 mb0 thin">care about performance.</li> <li class="h2 mt0 mb0 thin">want your code simple, testable, and maintainable.</li> </ul> </div> </div> </section> <section class="top bg-white-purple black"> <h2 class=ls2>A Holistic View of Web Development</h2> <p> How you design and use your database is just as important as how you style your user interface. By thinking of problems in the context of the <em>entire</em> application stack, you can produce better solutions than by simply focusing on one area. </p> </section> <section class="top bg-white black"> <a name=learn></a> <div class=clearfix> <div class="col col-12 px1"> <h1>The Stack <small>You'll Learn</small> </h1> </div> </div> <section> <div class=clearfix> <div class="col col-12 lg-col-6"> <img width=391 height=53 src=stack-view.png alt="View: AngularJS and Bootstrap" class=lg-show>
-<img width=329 height=44 src=stack-view.png alt="View: AngularJS and Bootstrap" class=lg-hide> </div> <div class="col col-12 lg-col-6"> <ul class=list-tight> <li>Manage front-end assets with Bower</li> <li>Create dynamic user interfaces</li> <li>Wrangle asynchronous JavaScript for a great user experience</li> <li>Lay out user interfaces using grid-based design</li> </ul> </div> </div> </section> <section> <div class=clearfix> <div class="col col-12 lg-col-6"> <img width=391 height=53 src=stack-middleware.png alt="Middleware: Ruby on Rails" class=lg-show>
-<img width=329 height=44 src=stack-middleware.png alt="Middleware: Ruby on Rails" class=lg-hide> </div> <div class="col col-12 lg-col-6"> <ul class=list-tight> <li>Deal with the Asset Pipeline</li> <li>Isolate Postgres-specific code</li> <li>Test end-to-end with PhantomJS</li> <li>Unit test JavaScript with Jasmine and Teaspoon</li> </ul> </div> </div> </section> <section> <div class=clearfix> <div class="col col-12 lg-col-6"> <img width=391 height=53 src=stack-datastore.png alt="Datastore: PostgreSQL" class=lg-show>
-<img width=329 height=44 src=stack-datastore.png alt="Datastore: PostgreSQL" class=lg-hide> </div> <div class="col col-12 lg-col-6"> <ul class=list-tight> <li>Model data using constraints</li> <li>Create sophisticated indexes for fast queries</li> <li>Store <em>indexed</em> JSON</li> <li>Materialized views to simplify complex queries</li> </ul> </div> </div> </section> </section> <section class="top bg-book-purple white"> <a name=why></a> <h1 class=h2>Why Angular, Postgres, and Bootstrap?</h1> <div class=clearfix> <div class="col col-12 lg-col-6"> <p class=p1> While these aren't the only tools of their type, they are top-notch and widely used. This book will help you get the most out of them. </p> </div> <div class="col col-12 lg-col-6"> <iframe class=lg-show width=400 height=225 src=//www.youtube.com/embed/QbUZnb0rPdY frameborder=0 allowfullscreen></iframe> <div class="lg-hide center"> <iframe width=280 height=157 src=//www.youtube.com/embed/QbUZnb0rPdY frameborder=0 allowfullscreen></iframe> </div> <p class="small thin"> Talk: “The Power Stack” from Full Stack Toronto </p> </div> </div> <section> <h1 class=h3>AngularJS</h1> <div class=clearfix> <div class="col col-12 lg-col-6"> <p> Tired of slinging JQuery, creating <code>data-</code> attributes, and hacking out your own half-implemented client-side framework? Angular makes all that go away, with clean, testable, well-organized code and front-end templates. </p> </div> <div class="col col-12 lg-col-6"> <ul class="m0 list-tight"> <li>Dead-simple AJAX calls without callback hell</li> <li>Organize your JavaScript sensibly</li> <li>De-couple your code into units, like you would in Rails</li> <li>Clear separation of view templates and view logic</li> <li>Test it all</li> </ul> </div> </div> </section> <section> <h1 class=h3>Postgres</h1> <div class=clearfix> <div class="col col-12 lg-col-6"> <p> Postgres is a best-of-breed SQL database. If you are used to MySQL, get ready to have your mind blown by what you can do. You'll have powerful tools to manage your data and control your database's performance. </p> </div> <div class="col col-12 lg-col-6"> <ul class="m0 list-tight"> <li>Indexed and Queriable JSON</li> <li>Auto-refreshing materialized Views</li> <li>Index on derived values, not just static ones</li> <li>Sophisticated Constraints</li> </ul> </div> </div> </section> <section> <h1 class=h3>Bootstrap</h1> <div class=clearfix> <div class="col col-12 lg-col-6"> <p> Bootstrap is a CSS framework that allows you to create a wide variety of user interfaces and designs <em>without writing any CSS</em>. CSS can be a huge source of complexity and frustration, and Bootstrap gives you a ton of tools to create pretty good user experiences without writing your own. </p> </div> <div class="col col-12 lg-col-6"> <ul class="mt0 list-tight"> <li>Grid-based design</li> <li>Attractive and usable forms and buttons</li> <li>Panels, flashes, progressbars, and many other components</li> <li>Don't write CSS</li> </ul> </div> </div> </section> </section> <section class="top bg-white-purple black"> <h2>The Holistic View</h2> <p> Above all else, you'll see how knowledge of these technologies, when considered together, will allow you great freedom in how you approach a particular problem. You won't have to sacrifice user experience, performance, or security, because you'll have a holistic view of your entire application's stack. </p> <div class=clearfix> <div class="col col-12 center"> <a href=https://pragprog.com/book/dcbang> <img width=190 height=228 class=border src=cover.jpg> </a> </div> <div class="col col-12 center"> <a class="btn btn-primary bg-tan white h2 m2 p2" href=https://pragprog.com/book/dcbang><span class=white>Buy Now $24.00</span></a> </div> </div> </section> <section class="top bg-white black"> <h2 class=center>My Other Books</h2> <div class=clearfix> <div class="col col-12 lg-col-6 center"> <a href=https://pragprog.com/book/dccar2> <img width=190 height=228 class=border src=https://imagery.pragprog.com/products/390/dccar2_xlargecover.jpg> </a> <h3>Build Awesome Command-Line Applications in Ruby 2</h3> <h4>Control your Computer, Simplify your Life</h4> <hr class=lg-hide> </div> <div class="col col-12 lg-col-6 center"> <a href="http://theseniorsoftwareengineer.com/"> <img width=140 height=228 class=border src=sweng-cover.png> </a> <h3>The Senior Software Engineer</h3> <h4>11 Practices of an Effective Technical Leader</h4> </div> </div> </section> <section class="top bg-book-purple white"> <h2>About Me</h2> <p> <img height=134 width=150 src=dave.jpg class="left p1">
-I'm a programmer, musician, and author. I speak frequently at national and regional conferences and spend my days currently as a Director of Engineering at Stitch Fix. I've written applications in C, Java, Ruby, Scala, and many others, on large and small teams. As a developer, I believe in clean code, making it right, providing a great user experience and using the right tool for the job. As a bass player, I believe in using a pick, locking it down, and ripping off Peter Hook. As an author, I insist on the Oxford Comma, try to avoid semi-colons, and have removed “very” and “thing” from my dictionary. </p> <h2 class=h3>Other Writing</h2> <ul> <li><a class=white href=http://naildrivin5.com>My Blog</a></li> <li><a class=white href=http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html>Rails Validations vs. Postgres Check Constraints</a></li> <li><a class=white href=http://multithreaded.stitchfix.com/blog/2015/06/02/anatomy-of-service-objects-in-rails>Anatomy of a Rails Service Object</a></li> <li><a class=white href=http://naildrivin5.com/blog/2014/05/27/rails-does-not-define-your-application-architecture.html>Rails Does not Define Your Application Architecture</a></li> <li><a class=white href=http://growingdevs.com/stop-using-rubygems-and-start-using-bower.html>Stop Using RubyGems and Start Using Bower for Front-end Asset Management</a></li> </ul> </section>  
+<!DOCTYPE html>
+
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>
+Rails, Angular, Postgres, and Bootstrap: Powerful, Effective, and Efficient Full-Stack Web Development. A book by David Bryant Copeland
+</title>
+<style>
+/*! Basscss | http://basscss.com | MIT License */.bold,.btn,h1,h2,h3,h4{font-weight:700}.col,.left{float:left}.btn-primary:disabled,.muted{opacity:.5}img{max-width:100%}body{font-family:'Helvetica Neue',Helvetica,sans-serif;line-height:1.5;font-size:100%;color:#111;background-color:#fff}.btn,code{background-color:transparent}h1,h2,h3,h4{line-height:1.25;margin-top:1em;margin-bottom:.5em}.mt0,p,ul{margin-top:0}p,ul{margin-bottom:1rem}.btn,.m0{margin:0}code{font-family:'Source Code Pro',Consolas,monospace;font-size:inherit;border-radius:3px}h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.25rem}h4{font-size:1rem}a{color:#0074d9;text-decoration:none}a:hover{text-decoration:underline}.btn,.btn:hover{text-decoration:none}hr{border:0;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.btn{font-family:inherit;font-size:inherit;cursor:pointer;display:inline-block;line-height:1.125rem;padding:.5rem 1rem;height:auto;border:1px solid transparent;vertical-align:middle;-webkit-appearance:none;color:inherit}.btn:focus{outline:0;border-color:rgba(0,0,0,.125);box-shadow:0 0 0 3px rgba(0,0,0,.25)}::-moz-focus-inner{border:0;padding:0}.btn-primary,.rounded{border-radius:3px}.btn-primary{color:#fff;background-color:#0074d9}.btn-primary:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-primary:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.small,.thin,small{font-weight:200}.center{text-align:center}.right-align{text-align:right}.nowrap{white-space:nowrap}.list-reset{list-style:none;padding-left:0}.overflow-hidden{overflow:hidden}.clearfix:after,.clearfix:before{content:" ";display:table}.clearfix:after{clear:both}.mb0{margin-bottom:0}.mt1{margin-top:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.p0{padding:0}.p1{padding:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.px2{padding-left:1rem;padding-right:1rem}.py3{padding-top:2rem;padding-bottom:2rem}.lg-show{display:none!important}.col{box-sizing:border-box}.col-4{width:33.33333%}.col-8{width:66.66667%}.col-12{width:100%}@media (min-width:64em){.lg-show{display:block!important}.lg-hide{display:none!important}.lg-col{float:left;box-sizing:border-box}.lg-col-6{width:50%}}.flex-auto{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.border{border-style:solid;border-width:1px;border-color:rgba(0,0,0,.125)}.black{color:#111}.white{color:#fff}.bg-white{background-color:#fff}.bg-book-purple{background-color:#202753}.btn.bg-book-purple:hover{background-color:#343b67}.bg-tan{background-color:#bca773}.bg-white-purple{background-color:#feeeff}.ls2{letter-spacing:.05em}.h2,.h3,.h4,h1,h2,h3,h4{font-family:"Helvetica Neue",Helvetica,sans-serif}a,li,p{font-family:Garamond,serif;font-size:18px}body{padding:0;margin:0}.top{padding:.5em 1em}@media (min-width:40em){.top{padding-left:8em;padding-right:8em}}@media (min-width:52em){.md-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.top{padding-left:16em;padding-right:16em}}.border-hover:hover{border:thin solid}.list-tight{line-height:1.2}.list-tight li{padding-top:.3em}
+</style>
+<body>
+<header class="mx4 top bg-white">
+<div class=clearfix>
+<div class="lg-show lg-col py3">
+<img width=190 height=228 class=border src=cover.jpg>
+</div>
+<div class="overflow-hidden px2">
+<h1 class=mb0>Rails, Angular, Postgres, and Bootstrap</h1>
+<h2 class="mt0 thin">Powerful, Effective, and Efficient Full-Stack Web Development</h2>
+<hr>
+<h3 class=h4>A Book by David Bryant Copeland</h3>
+<div>
+<a class="btn btn-primary bg-book-purple h2 mt2 p2" href=https://pragprog.com/book/dcbang/rails-angular-postgres-and-bootstrap>Buy Now $24.00</a>
+</div>
+<div>
+<a class="btn border rounded bg-book-purple muted white thin h3 mt1 p1" href="https://www.amazon.com/review/create-review?ie=UTF8&asin=1680501267">Write a Review…</a>
+</div>
+</div>
+</div>
+</header>
+<header class="bg-book-purple muted white">
+<nav class="p0 mt2">
+<ul class="list-reset md-flex lg-center nowrap p1">
+<li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=#full-stack>Full Stack</a></li>
+<li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=#learn>What You'll Learn</a></li>
+<li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=#why>Why Angular, Postgres, and Bootstrap?</a></li>
+<li class=flex-auto><a class="h3 thin border-hover rounded btn white" href=https://forums.pragprog.com/forums/389>Discuss Online</a></li>
+</ul>
+</nav>
+</header>
+<a name=full-stack></a>
+<section class="top bg-white black">
+<h1 class="mb0 h2">Web Development Requires Knowing the Full Stack</h1>
+<img width=658 height=330 src=stack-hype-generic.png class="mt0 lg-show">
+<img width=329 height=165 src=stack-hype-generic.png class="mt0 lg-hide">
+</section>
+<section class="top bg-book-purple white">
+<div class=clearfix>
+<div class="col col-4 right-align px2">
+<ul class="mt0 list-reset">
+<li class="h2 mt0 mb0 bold">You…</li>
+</ul>
+</div>
+<div class="col col-8">
+<ul class="mt0 list-reset list-tight">
+<li class="h2 mt0 mb0 thin">know a bit of Rails.</li>
+<li class="h2 mt0 mb0 thin">care about user experience.</li>
+<li class="h2 mt0 mb0 thin">care about performance.</li>
+<li class="h2 mt0 mb0 thin">want your code simple, testable, and maintainable.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="top bg-white-purple black">
+<h2 class=ls2>A Holistic View of Web Development</h2>
+<p>
+How you design and use your database is just as important as how you style your user interface. By thinking of problems in the context of the <em>entire</em> application stack, you can produce better solutions than by simply focusing on one area.
+</p>
+</section>
+<section class="top bg-white black">
+<a name=learn></a>
+<div class=clearfix>
+<div class="col col-12 px1">
+<h1>The Stack <small>You'll Learn</small> </h1>
+</div>
+</div>
+<section>
+<div class=clearfix>
+<div class="col col-12 lg-col-6">
+<img width=391 height=53 src=stack-view.png alt="View: AngularJS and Bootstrap" class=lg-show>
+<img width=329 height=44 src=stack-view.png alt="View: AngularJS and Bootstrap" class=lg-hide>
+</div>
+<div class="col col-12 lg-col-6">
+<ul class=list-tight>
+<li>Manage front-end assets with Bower</li>
+<li>Create dynamic user interfaces</li>
+<li>Wrangle asynchronous JavaScript for a great user experience</li>
+<li>Lay out user interfaces using grid-based design</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<div class=clearfix>
+<div class="col col-12 lg-col-6">
+<img width=391 height=53 src=stack-middleware.png alt="Middleware: Ruby on Rails" class=lg-show>
+<img width=329 height=44 src=stack-middleware.png alt="Middleware: Ruby on Rails" class=lg-hide>
+</div>
+<div class="col col-12 lg-col-6">
+<ul class=list-tight>
+<li>Deal with the Asset Pipeline</li>
+<li>Isolate Postgres-specific code</li>
+<li>Test end-to-end with PhantomJS</li>
+<li>Unit test JavaScript with Jasmine and Teaspoon</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<div class=clearfix>
+<div class="col col-12 lg-col-6">
+<img width=391 height=53 src=stack-datastore.png alt="Datastore: PostgreSQL" class=lg-show>
+<img width=329 height=44 src=stack-datastore.png alt="Datastore: PostgreSQL" class=lg-hide>
+</div>
+<div class="col col-12 lg-col-6">
+<ul class=list-tight>
+<li>Model data using constraints</li>
+<li>Create sophisticated indexes for fast queries</li>
+<li>Store <em>indexed</em> JSON</li>
+<li>Materialized views to simplify complex queries</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section class="top bg-book-purple white">
+<a name=why></a>
+<h1 class=h2>Why Angular, Postgres, and Bootstrap?</h1>
+<div class=clearfix>
+<div class="col col-12 lg-col-6">
+<p class=p1>
+While these aren't the only tools of their type, they are top-notch and widely used. This book will help you get the most out of them.
+</p>
+</div>
+<div class="col col-12 lg-col-6">
+<iframe class=lg-show width=400 height=225 src=//www.youtube.com/embed/QbUZnb0rPdY frameborder=0 allowfullscreen></iframe>
+<div class="lg-hide center">
+<iframe width=280 height=157 src=//www.youtube.com/embed/QbUZnb0rPdY frameborder=0 allowfullscreen></iframe>
+</div>
+<p class="small thin">
+Talk: “The Power Stack” from Full Stack Toronto
+</p>
+</div>
+</div>
+<section>
+<h1 class=h3>AngularJS</h1>
+<div class=clearfix>
+<div class="col col-12 lg-col-6">
+<p>
+Tired of slinging JQuery, creating <code>data-</code> attributes, and hacking out your own half-implemented client-side framework? Angular makes all that go away, with clean, testable, well-organized code and front-end templates.
+</p>
+</div>
+<div class="col col-12 lg-col-6">
+<ul class="m0 list-tight">
+<li>Dead-simple AJAX calls without callback hell</li>
+<li>Organize your JavaScript sensibly</li>
+<li>De-couple your code into units, like you would in Rails</li>
+<li>Clear separation of view templates and view logic</li>
+<li>Test it all</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<h1 class=h3>Postgres</h1>
+<div class=clearfix>
+<div class="col col-12 lg-col-6">
+<p>
+Postgres is a best-of-breed SQL database. If you are used to MySQL, get ready to have your mind blown by what you can do. You'll have powerful tools to manage your data and control your database's performance.
+</p>
+</div>
+<div class="col col-12 lg-col-6">
+<ul class="m0 list-tight">
+<li>Indexed and Queriable JSON</li>
+<li>Auto-refreshing materialized Views</li>
+<li>Index on derived values, not just static ones</li>
+<li>Sophisticated Constraints</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<h1 class=h3>Bootstrap</h1>
+<div class=clearfix>
+<div class="col col-12 lg-col-6">
+<p>
+Bootstrap is a CSS framework that allows you to create a wide variety of user interfaces and designs <em>without writing any CSS</em>. CSS can be a huge source of complexity and frustration, and Bootstrap gives you a ton of tools to create pretty good user experiences without writing your own.
+</p>
+</div>
+<div class="col col-12 lg-col-6">
+<ul class="mt0 list-tight">
+<li>Grid-based design</li>
+<li>Attractive and usable forms and buttons</li>
+<li>Panels, flashes, progressbars, and many other components</li>
+<li>Don't write CSS</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section class="top bg-white-purple black">
+<h2>The Holistic View</h2>
+<p>
+Above all else, you'll see how knowledge of these technologies, when considered together, will allow you great freedom in how you approach a particular problem. You won't have to sacrifice user experience, performance, or security, because you'll have a holistic view of your entire application's stack.
+</p>
+<div class=clearfix>
+<div class="col col-12 center">
+<a href=https://pragprog.com/book/dcbang>
+<img width=190 height=228 class=border src=cover.jpg>
+</a>
+</div>
+<div class="col col-12 center">
+<a class="btn btn-primary bg-tan white h2 m2 p2" href=https://pragprog.com/book/dcbang><span class=white>Buy Now $24.00</span></a>
+</div>
+</div>
+</section>
+<section class="top bg-white black">
+<h2 class=center>My Other Books</h2>
+<div class=clearfix>
+<div class="col col-12 lg-col-6 center">
+<a href=https://pragprog.com/book/dccar2>
+<img width=190 height=228 class=border src=https://imagery.pragprog.com/products/390/dccar2_xlargecover.jpg>
+</a>
+<h3>Build Awesome Command-Line Applications in Ruby 2</h3>
+<h4>Control your Computer, Simplify your Life</h4>
+<hr class=lg-hide>
+</div>
+<div class="col col-12 lg-col-6 center">
+<a href=http://theseniorsoftwareengineer.com/ >
+<img width=140 height=228 class=border src=sweng-cover.png>
+</a>
+<h3>The Senior Software Engineer</h3>
+<h4>11 Practices of an Effective Technical Leader</h4>
+</div>
+</div>
+</section>
+<section class="top bg-book-purple white">
+<h2>About Me</h2>
+<p>
+<img height=134 width=150 src=dave.jpg class="left p1">
+I'm a programmer, musician, and author. I speak frequently at national and regional conferences and spend my days currently as a Director of Engineering at Stitch Fix. I've written applications in C, Java, Ruby, Scala, and many others, on large and small teams. As a developer, I believe in clean code, making it right, providing a great user experience and using the right tool for the job. As a bass player, I believe in using a pick, locking it down, and ripping off Peter Hook. As an author, I insist on the Oxford Comma, try to avoid semi-colons, and have removed “very” and “thing” from my dictionary.
+</p>
+<h2 class=h3>Other Writing</h2>
+<ul>
+<li><a class=white href=http://naildrivin5.com>My Blog</a></li>
+<li><a class=white href=http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html>Rails Validations vs. Postgres Check Constraints</a></li>
+<li><a class=white href=http://multithreaded.stitchfix.com/blog/2015/06/02/anatomy-of-service-objects-in-rails>Anatomy of a Rails Service Object</a></li>
+<li><a class=white href=http://naildrivin5.com/blog/2014/05/27/rails-does-not-define-your-application-architecture.html>Rails Does not Define Your Application Architecture</a></li>
+<li><a class=white href=http://growingdevs.com/stop-using-rubygems-and-start-using-bower.html>Stop Using RubyGems and Start Using Bower for Front-end Asset Management</a></li>
+</ul>
+</section>
