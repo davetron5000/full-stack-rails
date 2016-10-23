@@ -1,3 +1,14 @@
+.book-copper {
+  color: rgb(190,133,124);
+}
+
+.bg-book-copper {
+  background-color: rgb(190,133,124);
+}
+.btn.bg-book-copper:hover {
+  background-color: rgb(160,103,94);
+}
+
 .book-purple {
   color: rgb(32,39,83);
 }
@@ -9,12 +20,26 @@
   background-color: rgb(52,59,103);
 }
 
+.mint {
+  color: #8ADDB8;
+}
+
+.bg-mint {
+  background-color: #8ADDB8;
+}
+
 .tan {
   color: #bca773;
 }
 
 .bg-tan {
   background-color: #bca773;
+}
+.light-mint {
+  color: #D2FFEF;
+}
+.bg-light-mint {
+  background-color: #D2FFEF;
 }
 
 .white-purple {
@@ -58,6 +83,15 @@ body {
   padding-left: 16em;
   padding-right: 16em;
   }
+}
+.lg-show-inline {
+  display: none !important;
+}
+@media (min-width: 64em){
+  .lg-show-inline{ display:inline !important }
+}
+.underline-hover:hover {
+  text-decoration: underline;
 }
 .border-hover:hover {
   border: solid thin;
