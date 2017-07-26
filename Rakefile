@@ -29,13 +29,13 @@ file "dev.html" => [HTML_SOURCE, CONSOLIDATED_CSS] do |task|
 end
 
 file MINIFIED_CLEAN_CSS => UN_CSS do |task|
-  sh! "minify #{UN_CSS} > #{MINIFIED_CLEAN_CSS}"
+  sh! "$(yarn bin)/minify #{UN_CSS} > #{MINIFIED_CLEAN_CSS}"
 end
 
 file UN_CSS => [ CONSOLIDATED_CSS, HTML_SOURCE ] do |task|
   HTML_FOR_UNCSS = "build/index.html"
   mk_html(src: HTML_SOURCE, dest: HTML_FOR_UNCSS, css: CONSOLIDATED_CSS.gsub(/^#{BUILD_DIR}\//,''))
-  sh! "uncss #{HTML_FOR_UNCSS} > #{UN_CSS}"
+  sh! "$(yarn bin)/uncss #{HTML_FOR_UNCSS} > #{UN_CSS}"
 end
 
 file "index.html" => [MINIFIED_CLEAN_CSS, HTML_SOURCE ] do |task|
@@ -58,7 +58,7 @@ file "index.html" => [MINIFIED_CLEAN_CSS, HTML_SOURCE ] do |task|
   }
   unminified_html = "build/index_#{$$}.html"
   mk_html(src: HTML_SOURCE, dest: unminified_html, css: :inline, typekit: false)
-  sh! "html-minifier #{html_minifier_options.join(' ')} -o #{task.name} #{unminified_html}"
+  sh! "$(yarn bin)/html-minifier #{html_minifier_options.join(' ')} -o #{task.name} #{unminified_html}"
 end
 
 desc "Build the production index.html"
