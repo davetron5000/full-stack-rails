@@ -1,2 +1,1 @@
-web: jekyll serve
-watch: watch rake dev
+web: bundle exec jekyll serve
