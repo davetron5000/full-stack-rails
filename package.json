@@ -4,9 +4,9 @@
   "repository": "https://github.com/davetron5000/full-stack-rails",
   "license": "MIT",
   "dependencies": {
-    "minify": "latest",
-    "uncss": "latest",
+    "basscss": "7.1.1",
     "html-minifier": "latest",
-    "basscss": "7.1.1"
+    "minify": "latest",
+    "uncss": "^0.15.0"
   }
 }
