@@ -5,8 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "basscss": "7.1.1",
-    "html-minifier": "latest",
-    "minify": "latest",
+    "html-minifier": "^4.0.0",
+    "minify": "^4.1.1",
     "uncss": "^0.15.0"
   }
 }
